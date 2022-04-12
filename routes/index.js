@@ -123,7 +123,7 @@ router.get('/danhsach',function (req,res) {
   })
 })
 // bước 1 : khởi tạo khung - Schema
-var dbb = 'mongodb+srv://admin:0iKcZtedXabJbL9l@cluster0.z3u96.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+var dbb = 'mongodb+srv://admin:phong29062002@cluster0.z3u96.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const mongoose = require("mongoose");
 mongoose.connect(dbb);
 // buoc 1 : khoi tao khung - Schema
