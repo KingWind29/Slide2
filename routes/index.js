@@ -122,6 +122,14 @@ router.get('/danhsach',function (req,res) {
     res.render('danhsach',{data : data})
   })
 })
+router.get('/allMobile', function (req, res) {
+
+  // lấy danh sách students
+  Image.find({}, function (err, data) {
+    res.send(data)
+  })
+
+})
 // bước 1 : khởi tạo khung - Schema
 var dbb = 'mongodb+srv://admin:phong29062002@cluster0.z3u96.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 const mongoose = require("mongoose");
